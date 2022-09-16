@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat&display=swap');
+
+/* Flex Container */
+.container {
+	max-width: 100%;
+  max-height: 5000px;
+	margin: 0 auto;
+	display: flex;
+}
+
+ /* FLEX divisórias */
+.space-2 {
+	flex: 2;
+  padding-left: 10%;
+}
+
+.space-3{
+	flex: 3;
+}
+
+
+
+
+
+
+/*Menu*/
+#header{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 240px;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: whitesmoke;
+}
+
+
+  /* Logo  */
+.myName{
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 38px;
+  letter-spacing: 3.12px;
+}
+
+  /* Links de navegação entre telas */
+li, ul{
+  list-style: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 3.12px;
+  line-height: 2.25em;
+  padding: 0%;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+  /* Social Media */
+.bottons{
+    bottom: 0;
+    padding-bottom: 40px;
+    position: absolute;
+    width: 80%;
+}
+
+.icon{
+  height: 45px;
+  width: 45px;
+}
+
+.navigation-midias{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+/* Conteúdo Principal */
+#main{
+  padding-top: 0;
+    margin-left: 240px;
+    position: relative;
+    display: block;
+    z-index: 2;
+  
+}
+
+
+.content{
+  
+}
+
+.introdution{
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.projects{
+  min-height: 100%;
+
+}
+
+#article{
+  width: 100%;
+  margin-bottom: 4.83871%;
+  margin-right: 0px;
+  clear: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-item{
+  display: inline-flex;
+  margin-right: 4%;
+}
+
+.imgProject{
+  overflow: hidden;
+  padding-bottom: 10%;
+  position: relative;
+  z-index: 1;
+  width: 108%;
+}
+
+
+.descrition-project{
+  justify-content: center;
+    display: flex;
+}
+
+.loaded{
+  display: flex;
+  flex: 3;
+  height: 300px;
+  width: 93%;
+}
+
+.loaded-large{
+  height: 300px;
+  width: 90%;
+}
+
+.large{
+  margin-right: 4%;
+}
+
+#img{
+  vertical-align: middle;
+}
+
+/* quando a largura da tela for menor que 1305px é aplicada a seguinte estilização para a imagem do terceiro projeto */
+@media (max-width:1305px) {
+
+  .loaded-large{
+    display: flex;
+    flex: 3;
+    height: 300px;
+    width: 93%;
+  }
+
+  .large{
+    display: inline-flex;
+    margin-right: 4%;
+  }
+}
+
+
+
+
+
+/* parei na parte que estava usando display: inline-flex em uma foto e na segunda float: left,
+ para colocar uma do lado da outra e ainda deixar responsivo. Quando diminuir a tela a imagem vai para baixo */
+
