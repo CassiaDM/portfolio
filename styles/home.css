@@ -19,7 +19,9 @@
 }
 
 
-
+body{
+  margin: 0;
+}
 
 
 
@@ -33,6 +35,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   background-color: whitesmoke;
+  z-index: 3;
 }
 
 
@@ -62,6 +65,10 @@ a{
   text-decoration: none;
 }
 
+a:hover{
+  transition: color .2s 0s ease-in-out;
+  color: #dad6d6;
+}
 
 
   /* Social Media */
@@ -89,16 +96,17 @@ a{
 /* Conteúdo Principal */
 #main{
   padding-top: 0;
-    margin-left: 240px;
+  margin-left: 0;
+    padding-left: 240px;
     position: relative;
     display: block;
     z-index: 2;
-  
+    overflow: hidden; /*para tirar o scroll*/
 }
 
 
 .content{
-  
+  padding: 0% 5%;
 }
 
 .introdution{
@@ -112,47 +120,63 @@ a{
 
 }
 
-#article{
-  width: 100%;
+article{
+  /*width: 100%;
   margin-bottom: 4.83871%;
-  margin-right: 0px;
+  margin-right: 0px;*/
   clear: left;
   overflow: hidden;
   position: relative;
 }
 
-.project-item{
+.project-item1, .project-item2{
   display: inline-flex;
-  margin-right: 4%;
+ 
+}
+
+.project-item1{
+  /*margin-right: 4%;*/
 }
 
 .imgProject{
   overflow: hidden;
-  padding-bottom: 10%;
+  /* padding-bottom: 10%; */
   position: relative;
   z-index: 1;
-  width: 108%;
+  margin: 0;
+  /*width: 108%;*/
 }
 
 
 .descrition-project{
   justify-content: center;
     display: flex;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.basic{
+  color: rgb(133, 131, 131);
 }
 
 .loaded{
   display: flex;
   flex: 3;
-  height: 300px;
-  width: 93%;
+  /* height: 300px; 
+  width: 100%;*/
 }
 
-.loaded-large{
-  height: 300px;
-  width: 90%;
+.large, .small{
+  height: 60%;
+  width: 100%;
 }
 
-.large{
+/* .small{
+  height: 335px;
+} */
+
+
+.project-item3{
   margin-right: 4%;
 }
 
@@ -161,25 +185,32 @@ a{
 }
 
 /* quando a largura da tela for menor que 1305px é aplicada a seguinte estilização para a imagem do terceiro projeto */
-@media (max-width:1305px) {
+@media (max-width:1348px) {
 
-  .loaded-large{
+  /* .loaded-large{
     display: flex;
     flex: 3;
     height: 300px;
     width: 93%;
-  }
+  } 
 
   .large{
-    display: inline-flex;
-    margin-right: 4%;
-  }
+    height: 335px;
+  }*/
 }
 
 
+footer{
+  background: linear-gradient(5deg, #801336, #C72C41);
+  /* background-color: #C72C41; */
+  padding: 2%;
+  text-align: right;
 
+  align-self: center;
+  color: rgba(255, 248, 248, 0.68);
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
 
-
-/* parei na parte que estava usando display: inline-flex em uma foto e na segunda float: left,
- para colocar uma do lado da outra e ainda deixar responsivo. Quando diminuir a tela a imagem vai para baixo */
+/* Faltou deixar a imagem mais opaca, com opacidade quando o mouse passar por cima tem um trecho comentado sobre isso. */
 
