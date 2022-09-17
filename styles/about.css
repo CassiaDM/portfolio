@@ -109,94 +109,27 @@ a:hover{
   padding: 0% 5%;
 }
 
-.introdution{
+
+.topo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconsPerfil{
+  display: inline-flex;
+  height: 1.3%;
   text-align: center;
-  font-size: x-large;
+  margin-bottom: 2%;
+}
+
+.infos, .more-infos{
   font-family: 'Montserrat', sans-serif;
 }
 
-.projects{
-  min-height: 100%;
-
-}
-
-article{
-  /*width: 100%;
-  margin-bottom: 4.83871%;
-  margin-right: 0px;*/
-  clear: left;
-  overflow: hidden;
-  position: relative;
-}
-
-.project-item1, .project-item2{
-  display: inline-flex;
- 
-}
-
-.project-item1{
-  /*margin-right: 4%;*/
-}
-
-.imgProject{
-  overflow: hidden;
-  /* padding-bottom: 10%; */
-  position: relative;
-  z-index: 1;
-  margin: 0;
-  /*width: 108%;*/
-}
-
-
-.descrition-project{
-  justify-content: center;
+.more-infos{
+  
+  align-items: center;
     display: flex;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.basic{
-  color: rgb(133, 131, 131);
-}
-
-.loaded{
-  display: flex;
-  flex: 3;
-  /* height: 300px; 
-  width: 100%;*/
-}
-
-.large, .small{
-  height: 60%;
-  width: 100%;
-}
-
-/* .small{
-  height: 335px;
-} */
-
-
-.project-item3{
-  margin-right: 4%;
-}
-
-#img{
-  vertical-align: middle;
-}
-
-/* quando a largura da tela for menor que 1305px é aplicada a seguinte estilização para a imagem do terceiro projeto */
-@media (max-width:1348px) {
-
-  /* .loaded-large{
-    display: flex;
-    flex: 3;
-    height: 300px;
-    width: 93%;
-  } 
-
-  .large{
-    height: 335px;
-  }*/
 }
 
 
@@ -212,5 +145,5 @@ footer{
   text-transform: uppercase;
 }
 
-/* Faltou deixar a imagem mais opaca, com opacidade quando o mouse passar por cima tem um trecho comentado sobre isso. */
+/* */
 
